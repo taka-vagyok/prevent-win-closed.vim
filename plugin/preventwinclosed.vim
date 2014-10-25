@@ -21,12 +21,12 @@ if !exists('g:prevent_win_closed_quit_enable')
 	let g:prevent_win_closed_quit_enable = 0 
 endif
 "If gvim is, this plugin is enable as default.
-if !exists('g:prevent_win_closed_disable')
-	let g:prevent_win_closed_disable = !has('gui')
+if !exists('g:prevent_win_closed_enable')
+	let g:prevent_win_closed_enable = 1
 endif
 
 "Initialize{{{
-if g:prevent_win_closed_disable == 0 
+if g:prevent_win_closed_enable == 0 
 	call preventwinclosed#enable()
 else
 	call preventwinclosed#disable()

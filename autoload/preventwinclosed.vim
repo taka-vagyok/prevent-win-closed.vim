@@ -10,7 +10,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! preventwinclosed#enable()
-	let g:prevent_win_closed_disable = 0
+	let g:prevent_win_closed_enable = 1 
 	"Maping
 	cabbrev q <c-r>=preventwinclosed#replace_cmd('q')<CR>
 	cabbrev qa <c-r>=preventwinclosed#replace_cmd('qa')<CR>
@@ -26,7 +26,7 @@ function! preventwinclosed#enable()
 endfunction
 
 function! preventwinclosed#disable()
-	let g:prevent_win_closed_disable = 1
+	let g:prevent_win_closed_enable = 0
 	"Re-maping
 	cabbrev q q
 	cabbrev qa qa
@@ -41,7 +41,7 @@ endfunction
 " replace quit command to enew command if last buffer
 function! preventwinclosed#replace_cmd(param)
 	" never come here but to be secure. {{{2
-	if g:prevent_win_closed_disable == 1 
+	if ! g:prevent_win_closed_enable 
 		call preventwinclosed#disable()
 		return a:param
 	endif
