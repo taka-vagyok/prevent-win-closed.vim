@@ -18,9 +18,13 @@ To use this pluging, you don't have to do anything without install.
 
 1. Install NeoBundle plugin to vim
 2. Add followings in .vimrc
+
 	> NeoBundle "taka-vagyok/prevent-win-closed.vim"
+
 3. Launch vim and exec following command
-    > :NeoBundleInstall
+
+	> :NeoBundleInstall
+
 4. Restart gvim
 
 ## How to configure (Optional) 
@@ -30,16 +34,22 @@ Add following values into .vimrc.
 
 - g:prevent_win_closed_disable 
 	- If set 1, This plugin get disable. (Default: 0)
+
 	> let g:prevent_win_closed_disable = 0
+
 - g:prevent_win_closed_quit_enable 
 	- If set 1, Prevent gvim closed as quit/quitall/qall commands. (Default: 0)
+
 	> let g:prevent_win_closed_quit_enable = 0
  
 
 ## Uninstall
 
 1. Remove follwings:
+
 	> NeoBundle "taka-vagyok/prevent-win-closed.vim"
+
 2. Launch vim and exec following command
-    > :NeoBundleClean
+
+	> :NeoBundleClean
 
