@@ -53,7 +53,7 @@ If set g:prevent_win_closed_enable = 1, this plugin get enable. (Default: 0)
 	
 If set g:prevent_win_closed_quit_enable = 1, Prevent gvim closed as quit/quitall/qall commands, too. (Default: 0)
 
-	let g:prevent_win_closed_quit_enable = 0
+	let g:prevent_win_closed_quit_enable = 1
  
 
 ## Uninstall
