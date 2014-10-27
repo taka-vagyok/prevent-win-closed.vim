@@ -4,7 +4,7 @@ prevent-win-closed.vim
 ## About
 
 When they close file with :q or :qa, tha last gvim window is closed.
-This plugin can prevent such a case.
+This plugin can prevent such a case in command mode.
 
 This function is disabled as defalut. Please enable this plugin by :PreventWinClosedEnable or set g:prevent_win_closed_enable = 1 in vim config file(e.g. ~/.vimrc), then the last gvim window will not close with q, qa or qaw.
 
